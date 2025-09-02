@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ASCollectionView-SwiftUI'
-  s.version          = '2.0.0'
+  s.version          = '2.1.3'
   s.summary          = 'A SwiftUI collection view with support for custom layouts, preloading, and more. '
 
   s.description      = <<-DESC
@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
     - supports removing separators for ASTableView.
                        DESC
 
-  s.homepage         = 'https://github.com/apptekstudios/ASCollectionView'
+  s.homepage         = 'https://github.com/sharetripnet/ASCollectionView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'apptekstudios' => '' }
-  s.source           = { :git => 'https://github.com/apptekstudios/ASCollectionView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/sharetripnet/ASCollectionView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
   s.swift_versions = '5.3'
