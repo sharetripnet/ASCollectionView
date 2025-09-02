@@ -21,6 +21,15 @@ public struct ASTableView<SectionID: Hashable>: UIViewControllerRepresentable, C
 	public var sections: [Section]
 	public var style: UITableView.Style
 	public var editMode: Bool = false
+    
+    public init(
+        sections: [Section],
+        style: UITableView.Style,
+        editMode: Bool) {
+        self.sections = sections
+        self.style = style
+        self.editMode = editMode
+    }
 
 	// MARK: Private vars set by public modifiers
 

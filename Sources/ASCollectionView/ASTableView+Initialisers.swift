@@ -14,16 +14,12 @@ public extension ASTableView
 	 */
 	@inlinable init(style: UITableView.Style = .plain, editMode: Bool = false, sections: [Section])
 	{
-		self.style = style
-		self.editMode = editMode
-		self.sections = sections
+        self.init(sections: sections, style: style, editMode: editMode)
 	}
 
 	@inlinable init(style: UITableView.Style = .plain, editMode: Bool = false, @SectionArrayBuilder <SectionID> sectionBuilder: () -> [Section])
 	{
-		self.style = style
-		self.editMode = editMode
-		sections = sectionBuilder()
+        self.init(sections: sectionBuilder(), style: style, editMode: editMode)
 	}
 }
 
